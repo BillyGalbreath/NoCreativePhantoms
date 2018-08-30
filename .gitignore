@@ -17,3 +17,7 @@ target/
 
 # Floobits
 .floo*
+
+dependency-reduced-pom.xml
+
+*Metrics.java
