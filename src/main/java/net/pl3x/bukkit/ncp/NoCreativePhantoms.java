@@ -1,5 +1,6 @@
 package net.pl3x.bukkit.ncp;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -10,6 +11,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class NoCreativePhantoms extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
+        new Metrics(this);
+
         try {
             Class.forName("com.destroystokyo.paper.PaperConfig");
         } catch (ClassNotFoundException e) {
